@@ -4,9 +4,9 @@ const router = express.Router();
 const controller = require("../controllers/productos.controller");
 
 router.get("/", controller.listado);
-router.get("/:id_producto", controller.obtenerPorId);
+router.get("/:id_productos", controller.obtenerPorId);
 router.post("/", controller.agregar);
-router.put("/:id_producto", controller.actualizar);
-router.delete("/:id_producto", controller.eliminar);
+router.put("/:id_productos", controller.actualizar);
+router.delete("/:id_productos", controller.eliminar);
 
 module.exports = router;
